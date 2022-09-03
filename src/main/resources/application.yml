@@ -1,0 +1,20 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /igood/api
+
+spring:
+  application:
+    name: igood
+  jpa:
+    database: mysql
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MariaDB103Dialect
+        format-sql: true
+  datasource:
+    url: jdbc:mariadb://localhost:3306/igood?useSSL=false&useUnicode=yes&characterEncoding=UTF-8&allowPublicKeyRetrieval=true&serverTimezone=UTC
+    username: root
+    password: root
+    driver-class-name: org.mariadb.jdbc.Driver
